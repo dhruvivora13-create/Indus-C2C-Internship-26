@@ -47,3 +47,10 @@ int main()
     obj4.strem4();
     return 0;
 }
+
+
+OUTPUT:
+for grp A
+b.tech or bsc
+for grp B
+pharma or mbbs
