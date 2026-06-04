@@ -1,0 +1,49 @@
+include<iostream>
+using namespace std;
+class stream
+{
+    public:
+    void strem1()
+    {
+        cout << "for grp A" << endl;
+    }
+};
+
+class stream2 : public stream
+{
+    public:
+    void strem2()
+    {
+        strem1();
+        cout << "b.tech or bsc" <<endl;
+    }
+};
+
+class stream3
+{
+    public:
+    void strem3()
+    {
+        cout << "for grp B" <<endl;
+    }
+};
+
+class stream4 : public stream3
+{
+    public:
+    void strem4()
+    {
+        strem3();
+        cout <<"pharma or mbbs" <<endl;
+    }
+};
+
+int main()
+{
+    stream2 obj2;
+    stream4 obj4;
+
+    obj2.strem2();
+    obj4.strem4();
+    return 0;
+}
