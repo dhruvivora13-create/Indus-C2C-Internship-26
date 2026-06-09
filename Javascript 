@@ -21,12 +21,6 @@ myobj.withdraw(2500)
 myobj.getbalance()
 myobj.getbalance()//-400
 
-OUTPUT: 
-Balance is1000
-Balance is6000
-Balance is3500
-Balance is3500
-
 2.
 class bank{
     constructor(amount){
@@ -58,11 +52,277 @@ myobj.getbalance()
 myobj.withdraw(200)
 myobj.getbalance()
 
-OUTPUT:
-Balance is100
-Balance is200
-minimum 2000 is required
-Balance is200
+3.  
+<head>
+	<script>
+	             document.write("<table border='1'>")
+	            for(var i=0;i<1000;i++){
+	                 document.write("<tr>")
+		if(i%2==0){
+                                             document.write("<td bgcolor='red'>"+i+"</td>")
+		}
+		else{
+		          document.write("<td bgcolor='blue'>"+i+"</td>")
+		}
+		document.write("</tr>")
+	             }
+       
+4.
+<html>
+<head>
+<title>document</title>
+<script>
+	document.write("HELLO JS")
+	document.write("<b></br> WE ARE D2 TAG")
+	var a=10
+	b=20
+	c=a+b
+	document.write("<br/>A value is:"+a)
+	document.write("<br/>B value is:"+b)
+	document.write("<br/>C value is:"+c)
+	if(c==40){
+	         document.write("</br>C is 30")
+	}else{
+	         document.write("</br>C IS NOT 30")
+	}
+</script>
+</head>
+<body>
 
+5.
+<html>
+<head>
+<title>Document</title>
+<script>
+	var myarr = ["C","C++","20",50,60,"javascript"]
+	for(var i=0;i<myarr.length;i++){
+		document.write(myarr[i])
+	}
+	for(i in myarr){
+	document.write("<br/>index is"+i+"value is "+myarr[i])
+	}
+	for(i of myarr){
+	document.write("<br/>Value is "+i)
+	}
+	myarr.forEach((value,index,arr)=>{
+	document.write("<br/>Value is "+value)
+	})
+</script>
+</head>
+<body>
+</body>
+</html>
 
+6.
+<html>
+<head>
+     <script>
+	 function demo1(){
+	      //document.write("Hello World")
+	      alert("welcome to JS")
+	 }
+         function demo2(){
+	     var a=confirm("Are you sure?")
+		if(a==true){
+			alert("Record Deleted")
+		}
+	     }
+	function demo3(){
+	     var a=prompt("Enter no.1:")
+	     var b=prompt("Enter no.2:")
+	     var c=parseInt (a)+ parseInt (b)
+	     alert(" sum is: " +c)
+	     }
+	</script>
+</head>
+<body>
+<input type="button" onclick="demo1()" value ="Button 1"/>
+<input type="button" onclick="demo2()" value ="Button 2"/>
+<input type="button" onclick="demo3()" value ="Button 3"/>
+</body>
+</html>
 
+7.
+<html>
+<head>
+<script>
+	function doSum(){
+		var a= myfrm.txt1.value
+		var b= myfrm.txt2.value
+		var c= parseInt(a) + parseInt(b)
+		//document.write("Sum is "+c)	
+		myfrm.ans.value=" Sum is "+c
+	}
+</script>
+<body>
+	<form id="myfrm">
+		No1:<input type="text" name="txt1"/><br/>
+		No2:<input type="text" name="txt2"/><br/>
+<input type="button" onclick="doSum()" value="Sum"/>
+<input type="text" name="ans" readonly disabled/>
+</form>
+</body>
+<html>
+
+8.
+<html>
+<head>
+<script>
+	function doSum(){
+		var a= myfrm.txt1.value
+		var b= myfrm.txt2.value
+		var c= parseInt(a) + parseInt(b)
+		//document.write("Sum is "+c)	
+		myfrm.ans.value=" Sum is "+c
+	}
+	function doSub(){
+		var a= myfrm.txt1.value
+		var b= myfrm.txt2.value
+		var c= parseInt(a) - parseInt(b)
+		//document.write("Sub is "+c)	
+		myfrm.ans.value=" Sub is "+c
+	}
+	function doMultiply(){
+		var a= myfrm.txt1.value
+		var b= myfrm.txt2.value
+		var c= parseInt(a) * parseInt(b)
+		//document.write("Multiply is "+c)	
+		myfrm.ans.value=" Multiply is "+c
+	}
+	function doDiv(){
+		var a= myfrm.txt1.value
+		var b= myfrm.txt2.value
+		var c= parseFloat(a) / parseFloat(b)
+		//document.write("Div is "+c)	
+		myfrm.ans.value=" Div is "+c
+	}
+		
+
+</script>
+<body>
+	<form id="myfrm">
+		No1:<input type="text" name="txt1"/><br/>
+		No2:<input type="text" name="txt2"/><br/>
+<input type="Button" onclick="doSum()" value="Sum"/>
+<input type="Button" onclick="doSub()" value="Sub"/>
+<input type="Button" onclick="doMultiply()" value="Multiply"/>
+<input type="Button" onclick="doDiv()" value="Div"/>
+<input type="text" name="ans" readonly disabled/>
+</form>
+</body>
+<html>
+
+9.
+<html>
+<head>
+<script>
+	function doSum(){
+		var a= myfrm.txt1.value
+		var b= myfrm.txt2.value
+		var c= parseInt(a) + parseInt(b)
+		//document.write("Sum is "+c)	
+		myfrm.ans.value=" Sum is "+c
+	}
+	function doSub(){
+		var a= myfrm.txt1.value
+		var b= myfrm.txt2.value
+		var c= parseInt(a) - parseInt(b)
+		//document.write("Sub is "+c)	
+		myfrm.ans.value=" Sub is "+c
+	}
+	function doMultiply(){
+		var a= myfrm.txt1.value
+		var b= myfrm.txt2.value
+		var c= parseInt(a) * parseInt(b)
+		//document.write("Multiply is "+c)	
+		myfrm.ans.value=" Multiply is "+c
+	}
+	function doDiv(){
+		var a= myfrm.txt1.value
+		var b= myfrm.txt2.value
+		var c= parseFloat(a) / parseFloat(b)
+		//document.write("Div is "+c)	
+		myfrm.ans.value=" Div is "+c
+	}
+		
+
+</script>
+<body>
+	<form id="myfrm">
+		No1:<input type="text" name="txt1"/><br/>
+		No2:<input type="text" name="txt2"/><br/>
+<input type="Radio" onclick="doSum()" value="Sum"/>
+<input type="Radio" onclick="doSub()" value="Sub"/>
+<input type="Radio" onclick="doMultiply()" value="Multiply"/>
+<input type="Radio" onclick="doDiv()" value="Div"/>
+<input type="text" name="ans" readonly disabled/>
+</form>
+</body>
+<html>
+
+10.
+<html>
+
+<script>
+	function doCalculate(){
+		var a= myfrm.txt1.value
+		var b= myfrm.txt2.value
+		var choice= myfrm.txt3.value
+		
+	
+	if(choice=="+"){
+		var c=parseInt(a)+parseInt(b)	
+		myfrm.ans.value=" Sum is "+c
+	}
+	else if(choice=="-"){
+		var c=parseInt(a)-parseInt(b)	
+		myfrm.ans.value=" sub is "+c
+	}
+	else if(choice=="*"){
+		var c=parseInt(a)*parseInt(b)	
+		myfrm.ans.value=" multiply is "+c
+	}
+	else if(choice=="/"){
+                var c=parseInt(a)/parseInt(b)	
+		myfrm.ans.value=" div is "+c
+	}
+}
+</script>
+<body>
+	<form id="myfrm">
+		No1:<input type="text" name="txt1"/><br/>
+		No2:<input type="text" name="txt2"/><br/>
+choice:
+<select name="txt3">
+<option>+</option>
+<option>-</option>
+<option>*</option>
+<option>/</option>
+</select>
+<input type="button" onclick="doCalculate()" value="get answer"/>
+<input type="text" name="ans" readonly disabled/>
+</form>
+</body>
+</html>
+
+11.
+<html>
+<script>
+	function doSum(){
+		var a = parseInt(document.getElementById("txt1").value)
+	        var myans = document.getElementById("ans")
+	if(a%2==0){
+		myans.innerText="No is Even"
+	}else{
+		myans.innerText="No is Odd"
+}
+}
+</script>
+
+	<body>
+
+	      No:<input type="text" id="txt1"/>
+	      <input type="button" onclick="doSum()"/>
+	<p id="ans" ></p>
+</body>
+</html>
