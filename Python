@@ -1,0 +1,139 @@
+1. 
+a = 10
+b = 20
+c = a + b
+print("A Value is ",a)
+print("B Value is ",b)
+print("Sum is ", c)
+
+2. 
+a = 10
+b = 20
+c = a + b
+print("A Value is ",a)
+print("B Value is ",b)
+print("Sum is ",c)
+
+if a == 10:
+    print("A is 10")
+elif a<10:
+    print("A is < 10")
+else:
+    print("A is > 10")
+
+3. 
+a=int(input("Enter Positive Number:"))
+if a>0:
+    if a==30:
+        print("A is 30")
+    elif a< 30:
+        print(" A is <30")
+    else:
+        print("A is >30")
+else:
+    print("Enter Positive Numer Only")
+
+4.
+a = int(input("Enter value for 'a': "))
+b = int(input("Enter value for 'b': "))
+
+print(f"a + b = {a + b}")
+print(f"a - b = {a - b}")
+print(f"a * b = {a * b}")
+print(f"a / b = {a / b}")
+print(f"a % b (remainder) = {a % b}")
+
+5. 
+name= input("enter name:")
+age= int(input("enter age:"))
+city=input("enter city:")
+
+print(" stduent profile")
+print("name:",name)
+print("age:",age)
+print("city:",city)
+print("age after 4yrs:",age+4)
+
+6. 
+num=int(input("enter number:"))
+name= input("enter name:")
+
+if num % 2 == 0:
+  print("even numbers")
+else:
+  print("odd numbers")
+
+7.
+marks = int(input("enter marks:"))
+
+if marks <=55:
+  print(" grade E ")
+elif marks <=65:
+  print(" grade D")
+elif marks <=75:
+  print(" grade C")
+elif marks <=85:
+  print(" grade B")
+elif marks <=95:
+  print(" grade A")
+
+8. 
+x="                          hello                          "
+f=x.strip()
+g=x.rstrip()
+h=x.lstrip()
+print(f)
+print(g)
+print(h)
+
+9.
+balance=500
+
+print("1. check balanc")
+print("2. deposite")
+print ("3. withdraw")
+
+choice= int(input("enter choice:"))
+
+if choice==1:
+  print (" balance=",balance)
+
+elif choice ==2:
+  amount =float (input("enter amouny:"))
+  balance += amount
+  print(" updated balance :",balance)
+
+elif choice ==3:
+  amount=float(input("enter amount"))
+  if amount <= balance:
+    balance = balance-amount
+    print (" updated balance: ",balance)
+  else:
+    print (" insufficient balance")
+
+10.
+sub1= int(input("enter marks od sub1 :"))
+sub2= int(input("enter marks od sub2 :"))
+sub3= int(input("enter marks od sub3 :"))
+sub4= int(input("enter marks od sub4 :"))
+sub5= int(input("enter marks od sub5 :"))
+total = sub1 + sub2 + sub3 + sub4 + sub5
+percentage = total / 5
+if sub1 < 50 or sub2 < 50 or sub3 < 50 or sub4 < 50 or sub5 < 50:
+    result = "Fail"
+else:
+    result = "All Clear"
+print("Total Marks =",total)
+print("Percentage =",percentage, "%")
+print("Result =", result)
+
+if sub1 < 50 :
+    print("you are fail in sub1")
+if sub2 < 50 :
+    print("you are fail in sub2")
+if sub3 < 50 :
+    print("you are fail in sub3")
+if sub4 < 50 :
+    print("you are fail in sub4")
+if sub5 < 50 :
+    print("you are fail in sub5")
