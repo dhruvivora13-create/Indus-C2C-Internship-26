@@ -138,3 +138,55 @@ if sub4 < 50 :
     print("you are fail in sub4")
 if sub5 < 50 :
     print("you are fail in sub5")
+
+11. LIST
+
+mylist = [10,20,"c","python",100]
+print(mylist)
+print(mylist[-1])
+print(mylist[2])
+print(mylist[3:5])
+print(mylist[2:])
+for i in mylist:
+  print(i)
+
+12.DYNAMIC LIST 
+
+mylist=[]
+count= int(input("How many Records?"))
+for i in range(0, count):
+  myvalue= input("ENTER VALUE")
+  mylist.append(mylist)
+  print(i)
+
+13. TUPLE 
+
+14. DYNAMIC TUPLE
+
+15. DICTIONARY 
+
+mydic = {"A":"Apple",50:"Sachin","P":"Python"}
+for i in mydic:
+  print(f"key is {i} value is {mydic[i]}")
+
+14. DYNAMIC DICTIONARY 
+
+mydic={}
+count= int(input("How many Records?"))
+for i in range(0, count):
+  key= input("ENTER key")
+  value=input("enter value")
+  mydic[key]=value
+print(mydic)
+
+15. SETS 
+
+16. FUNCTIONS 
+
+def myfuncdemo(a,b):
+   c=a+b
+   return c
+ans = myfuncdemo(20,30)
+print("ans is",ans)
+
+17. METHODS OF LISTING
