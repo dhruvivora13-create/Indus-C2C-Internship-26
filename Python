@@ -140,7 +140,6 @@ if sub5 < 50 :
     print("you are fail in sub5")
 
 11. LIST
-
 mylist = [10,20,"c","python",100]
 print(mylist)
 print(mylist[-1])
@@ -151,7 +150,6 @@ for i in mylist:
   print(i)
 
 12.DYNAMIC LIST 
-
 mylist=[]
 count= int(input("How many Records?"))
 for i in range(0, count):
@@ -159,18 +157,13 @@ for i in range(0, count):
   mylist.append(mylist)
   print(i)
 
-13. TUPLE 
 
-14. DYNAMIC TUPLE
-
-15. DICTIONARY 
-
+13. DICTIONARY 
 mydic = {"A":"Apple",50:"Sachin","P":"Python"}
 for i in mydic:
   print(f"key is {i} value is {mydic[i]}")
 
 14. DYNAMIC DICTIONARY 
-
 mydic={}
 count= int(input("How many Records?"))
 for i in range(0, count):
@@ -179,14 +172,78 @@ for i in range(0, count):
   mydic[key]=value
 print(mydic)
 
-15. SETS 
-
-16. FUNCTIONS 
-
+15. FUNCTIONS 
 def myfuncdemo(a,b):
    c=a+b
    return c
 ans = myfuncdemo(20,30)
 print("ans is",ans)
 
-17. METHODS OF LISTING
+16.
+def __init__(self,amount):
+    self.amount=amount
+   def getBalance(self):
+    print("Current Balance is",self.amount)
+   def Deposite(self,amount):
+    self.amount=self.amount+amount
+   def Withdraw(self,amount):
+    self.amount=self.amount-amount
+
+ myobj =Bank(1000)
+ myobj.getBalance()
+ myobj.Deposite(90000)
+ myobj.getBalance()
+ myobj.Withdraw(100000)
+ myobj.getBalance()
+
+17.
+class Calc:
+  def __init__(self,number1,number2):
+   self.number1 = number1
+   self.number2 = number2
+  def getAdd(self):
+   Add = self.number1+self.number2
+   print("Add is:",self.number1+self.number2)
+  def getSub(self):
+   Sub = self.number1-self.number2
+   print("Sub is:",self.number1-self.number2)
+  def getMulti(self):
+   Multi= self.number1*self.number2
+   print("Multi is:",self.number1 * self.number2)
+  def getDiv(self):
+   Div= self.number1/self.number2
+   print("Div is:",self.number1/self.number2)
+myobj = Calc(10,20)
+myobj.getAdd()
+myobj.getSub()
+myobj.getMulti()
+myobj.getDiv()
+
+18.
+class MyCar:
+def MyCarMethod(self):
+   print("This is My Car Class Method")
+class APcar(MyCar):
+def APcarMethod(self):
+   print("This is AP Car")
+def MyCarMethod(self):
+   print("This is My Car Child Method")
+def mydata(self):
+   super().MyCarMethod()
+
+19.FILE HANDLING 
+myfile=open("dhruvi.txt",'a')
+myfile.write("\n Hiiii")
+myfile.close()
+myfile2=open("dhruvi.txt",'r')
+content=myfile2.read()
+print(content)
+myfile2.close()
+
+20.
+with open("Indus.text","a")as myfile:
+  mydata=myfile.write("\n Hello")
+with open("Indus.text") as myfile:
+  mydata=myfile.read()
+  print(mydata)
+
